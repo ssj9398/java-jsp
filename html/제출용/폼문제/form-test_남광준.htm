@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+ <title>form-test</title>
+</head>
+<body>
+<h1>ITWILL 회원가입</h1>
+<form action ="test.jsp" method = "post">
+
+<fieldset>
+<legend>필수 입력</legend>
+ <label>♣ 이름<input type = "text" required></label><br>
+ <label>♣ 아이디<input type = "text" maxlength="10" , placeholder = "6~10자 영문과 숫자 조합" required></label><br>
+ <label>♣ 비밀번호<input type = "password" required></label><br><br>
+ <label>♣ 성별<br><input type = "radio" name = "radi" required>남<br>
+	    <input type = "radio" name = "radi" checked required>여<br>
+	    <input type = "radio" name = "radi" required>기타<br>
+ </label><br>
+ <label>♣ 전화번호<input type = "tell" required></label><br>
+ <label>♣ email<input type = "email" required></label><br>
+<hr>
+ <label>♣ 아이티윌부산이 제공하는 정보를 받으시겠습니까?<br>
+ <input type = "radio" name = "radi1" checked ,required>받습니다<br>
+ <input type = "radio" name = "radi1" required>받지 않겠습니다<br><br>
+
+ <label>♣ 정보나 이벤트 소식을 어떻게 받으시겠습니까?<br>
+ <input type = "checkbox" checked required>이메일<br>
+ <input type = "checkbox" >문자<br>
+ <input type = "checkbox" checked required>카카오톡<br>
+ <input type = "checkbox" >우편<br>
+</fieldset>
+
+<fieldset>
+<legend>선택 입력</legend>
+ <label>♣ 프로필 사진</label><br>
+  <input type = "file"><br><br>
+ <label>♣ 자기 소개를 해주세요<br>
+	<textarea rows = "10" cols = "100" placeholder = "간단히 작성하세요"></textarea><br>
+ </label>
+ <label>♣ 블로그주소<input type = "url"</label><br><br>
+ <label>♣ 학과를 선택해주세요</label><br>
+  <select>
+   <option>컴퓨터공학과</option>
+   <option selected>산업공학과</option>
+   <option>기계공학과</option>
+   <option>화학공학과</option>
+   <option>전기전자공학과</option>
+   <option>건축공학과</option>
+  </select><br><br>
+
+ <label>♣ 취미, 특기를 선택해주세요</label><br>
+  <select multiple size = "4">
+   <optgroup label="취미">
+    <option>등산</option>
+    <option>여행</option>
+    <option selected>요리</option>
+    <option>게임</option>
+   </optgroup>
+
+   <optgroup label="특기">
+    <option>운동</option>
+    <option>바둑</option>
+    <option>음악</option>
+    <option>무용</option>
+   </optgroup>
+  </select>
+
+</fieldset>
+<br>
+<button type = "submit"><img src = "aniyellow.gif">가입</button>
+<button type = "reset"><img src = "aniyellow.gif">취소</button>
+
+
+
+
+
+</form>
+</body>
+</html>

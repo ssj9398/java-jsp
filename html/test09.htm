@@ -1,0 +1,82 @@
+﻿<html>
+ <head>
+  <title>iframe으로 외부 문서 보여주기</title>
+ </head>
+ <body>
+<hr>
+<h1>iframe으로 외부 문서 보여주기</h1>
+<hr>
+<mark><b>
+&lt;iframe src="보여줄내용" width="n" height="n"&gt;&lt;/iframe&gt;
+</b></mark>
+<br><br><br>
+<iframe>iframe을 지원하지 않는 브라우저</iframe> <br><br><br>
+
+<hr>
+<h1>iframe 안에 링크 보여주기</h1>
+<pre>
+<mark>
+&lt;iframe src="처음에 보여줄 내용" <b>name="이름값"</b>&gt; &lt;/iframe&gt; 
+
+&lt;a href="링크로 보여줄 내용" <b>target="이름값"</b>&gt;...&lt;/a&gt;
+</mark>
+</pre>
+
+
+<hr>
+<iframe src="test01.htm" width="800" height="500" name="if01"></iframe> <br>
+<nav>
+ <a href="test01.htm" target="if01">test01.htm</a>
+ <a href="test02.htm" target="if01">test02.htm</a>
+ <a href="test03.htm" target="if01">test03.htm</a>
+ <a href="test04.htm" target="if01">test04.htm</a>
+ <a href="test05.htm" target="if01">test05.htm</a>
+ <a href="test06.htm" target="if01">test06.htm</a>
+ <a href="test07.htm" target="if01">test07.htm</a>
+ <a href="test08.htm" target="if01">test08.htm</a>
+ <a href="test08-1.htm" target="if01">test08-1.htm</a>
+ <a href="test09.htm" target="if01">test09.htm</a>
+</nav> <br><br>
+
+
+
+
+<h5>문제. 아이티윌부산, morguefile 사이트를 아이프레임 안에 보여주는 링크 완성하기</h5>
+
+<iframe src="img/cat.jpg" width="800" height="400" name="if02"></iframe> 
+
+<nav>
+ <a href="https://itwillbs.co.kr/" target="if02">아이티윌부산</a>
+ <a href="https://morguefile.com/" target="if02">morguefile</a>
+</nav> <br><br>
+
+
+
+
+
+
+<h3>iframe안에 외부사이트 보여주기</h3>
+<iframe src="https://www.pexels.com/" width="800" height="400"></iframe> <br><br><br>
+
+<h3>iframe안에 웹문서 보여주기</h3>
+<iframe src="test08-1.htm" width="600" height="500"></iframe> <br><br><br>
+ 
+<h3>iframe안에 이미지 보여주기</h3>
+<iframe src="img/woman.jpg" width="640" height="300"></iframe> <br><br><br>
+
+<h3>iframe안에 동영상 보여주기</h3>
+<iframe src="img/trees.mp4" width="600" height="400"></iframe> <br><br><br>
+
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

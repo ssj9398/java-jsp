@@ -1,0 +1,85 @@
+<!DOCTYPE html> 
+<html>
+<head>
+ <title><b>ITWILL 회원가입</b></title>
+</head>
+
+<body>
+<hr>
+<h1><b>ITWILL 회원가입</b></h1>
+
+<form action="test.jsp" method="POST"> 
+
+<fieldset>
+<p>
+<legend>[필수입력]</legend>
+<label>♣이름<input type="text" required></label><br>
+<label>♣아이디 <input type="text" minlength="10" placeholder="6~10자 영문과 숫자 조합" required> </label><br>
+<label>♣비밀번호<input type="text" required></label><br>
+<label>♣성별<input type="text" required></label><br>
+ <label> <input type="radio"> 남</label> <br>
+ <label> <input type="radio" checked>여</label> <br>
+ <label> <input type="radio">기타</label>
+</p>
+
+<label>♣전화번호<input type="text" required></label><br>
+<label>♣이메일<input type="text" required></label><br>
+<hr>
+
+<p>♣아이티윌부산이 제공하는 정보를 받으시겠습니까?<br>
+ <label> <input type="radio" name="event" checked>받습니다</label> <br>
+ <label> <input type="radio" name="event">받지않겠습니다</label>
+</p>
+<p>♣정보나 이벤트 소식을 어떻게 받으시겠습니까?<br>
+ <label> <input type="checkbox" name="event" checked>이메일</label> <br>
+ <label> <input type="checkbox" name="event">문자</label><br>
+ <label> <input type="checkbox" name="event" checked>카카오톡</label> <br>
+ <label> <input type="checkbox" name="event">우편</label>
+</p>
+</fieldset>
+<br><br>
+
+
+<fieldset>
+<legend>[선택입력]</legend>
+<label>♠자기소개를 해주세요<br>
+<textarea cols="100" rows="10">간단히 작성하세요</textarea>
+<label>♠블로그주소<input type="text" required></label><br>
+
+
+<p>
+<label>♠학과를 선택해주세요<br>
+<select>
+ <option>컴퓨터공학과</option>
+ <option selected>산업공학과</option>
+ <option>기계공학과</option>
+ <option>화학공학과</option>
+ <option>전기전자공학과</option>
+ <option>건축공학과</option>
+</select>
+</p>
+<label>
+<p>♠취미,특기를 선택해주세요 <br>
+<select size="5">
+ <option> 등산</option>
+ <option> 여행</option>
+ <option selected>요리</option>
+ <option>운동</option>
+ <option>바둑</option>
+ <option >음악</option>
+ <option>무용</option>
+</select>
+</p>
+</fieldset>
+
+<button type="button"><img src="aniyellow.gif" width="20px">가입</button>
+<button type="button"><img src="aniyellow.gif" width="20px">취소</button>
+  
+</form>
+
+</body>
+</html>
+
+
+
+

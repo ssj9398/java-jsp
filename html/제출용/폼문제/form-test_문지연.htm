@@ -1,0 +1,71 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <title>문지연 test</title>
+</head>
+<body>
+<h1>ITWILL회원가입</h1>
+<form action="test.jsp" method="post">
+<fieldset>
+<legend>[ 필수입력 ]</legend>
+  <label>♣이름     <input type="text" required></label><br>
+  <label>♣아이디 <input type="text" required placeholder="6~10자 영문과 숫자 조합" minlength=6 maxlength=10></label><br>
+  <label>♣비밀번호   <input type="password" required></label><br><br>
+
+  <label>♣성별 <br>
+	<input type="radio" name="gender" required>남<br>
+	<input type="radio" name="gender" required checked>여<br>
+	<input type="radio" name="gender" required>기타</label><br><br>
+
+<label>♣전화번호  <input type="tel" required></label><br>
+<label>♣email   <input type="email" required></label><br>
+
+<hr><br>
+
+<label>♣아이티윌 부산이 제공하는 정보를 받으시겠습니까?<br>
+	<input type="radio" name="jungbo" required checked>받습니다<br>
+	<input type="radio" name="jungbo" required>받지 않겠습니다</label><br>
+<label>♣정보나 이벤트 소식을 어떻게 받으시겠습니까?<br>
+	<input type="checkbox" name="howj" checked>이메일<br>
+	<input type="checkbox" name="howj" >문자<br>
+	<input type="checkbox" name="howj" checked>카카오톡<br>
+	<input type="checkbox" name="howj" >우편<br></label>
+</fieldset>
+<br><br>
+<fieldset>
+<legend>[ 선택입력 ]</legend>
+  <label>♣자기소개를 해주세요<br>
+         <textarea cols="150" rows="10" placeholder="간단히 작성하세요"></textarea></label><br><br>
+  <label>♣블로그 주소  <input type="url"></label><br><br>
+  <label>♣학과를 선택해주세요<br>
+  <select>
+     <option>컴퓨터공학과</option>
+     <option>산업공학과</option>
+     <option>기계공학과</option>
+     <option>화학공학과</option>
+     <option>전기전자공학과</option>
+     <option>건축공학과</option>
+  </select>
+  </label><br><br>
+
+  <label>♣취미,특기를 선택해주세요<br>
+   <select multiple size="4">
+   <optgroup label="취미">
+	<option>등산</option>
+	<option>여행</option>
+	<option selected>요리</option>
+	<option>게임</option>
+   </optgroup>
+   <optgroup label="특기">
+	<option>운동</option>
+	<option>바둑</option>
+	<option selected>음악</option>
+	<option>무용</option>
+   </optgroup>
+ </select></fieldset><br>
+</label><br>
+
+<button type="submit"><img src="aniyellow.gif" width="10px">가입</button> 
+<button type="button"><img src="aniyellow.gif" width="10px">취소</button> 
+</body>
+</html>

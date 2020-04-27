@@ -1,0 +1,219 @@
+﻿<html>
+<head>
+ <title>list 목록</title>
+</head>
+<body>
+<hr>
+<h1>list로 목록 만들기</h1>
+
+<h2>목록의 종류</h2>
+<ol>
+ <li>&lt;ol&gt; (Ordered List) - 순서 있는 목록</li>
+ <li>&lt;ul&gt; (Unrdered List) - 순서 없는 목록</li>
+ <li>&lt;dl&gt; (Description list) - 정의 목록 </li>
+</ol>
+
+<hr>
+<h3>ol - 순서 있는 목록</h3>
+
+ <ol>
+  <li>5교시</li>
+  <li>6교시</li>
+  <li>7교시</li>
+  <li>8교시</li>
+ </ol>
+
+<h5>문제1. 추천하는 점심메뉴를 추천 순서대로 5가지 목록으로 만드시오.</h5>
+
+ <ol>
+  <li>최고 맛난거</li>
+  <li>아주 맛난거</li>
+  <li>맛난거</li>
+  <li>좀 맛난거</li>
+  <li>덜 맛난거</li>
+ </ol>
+
+<hr>
+<h3>ul - 순서 없는 목록</h3>
+
+<h6>웹표준을 개발할 때의 기본 기술 3가지</h6>
+<ul>
+ <li>html5</li>
+ <li>CSS3</li>
+ <li>Javascript</li>
+</ul>
+<h6>html문서를 구성하는 요소들</h6>
+<ul>
+ <li>tag</li>
+ <li>속성</li>
+ <li>속성값</li>
+</ul>
+
+<ul>
+ <li>p tag</li>
+ <li>hn tag</li>
+ <li>br tag</li>
+ <li>hr tag</li>
+ <li>pre tag</li>
+ <li>table tag</li>
+</ul>
+
+<hr>
+<h3>dl - 정의 목록</h3>
+
+<dl>
+ <dt>dl?</dt>
+ <dd>Description list의 약자.</dd>
+</dl>
+
+<dl>
+ <dt>html</dt>
+ <dd>Hyper Text Markup Language의 약자.</dd>
+ <dd>웹페이지를 만들어 주는 프로그래밍 언어.</dd>  
+</dl>
+
+<h6>☆웹표준 기술 3가지의 역할</h6>
+<dl>
+ <dt>HTML</dt>
+ <dd>웹페이지의 구조를 만들어 줌</dd>
+ <dt>CSS</dt>
+ <dd>웹페이지를 디자인하여 꾸며 줌</dd>
+ <dt>JavaScript</dt>
+ <dd>웹페이지에 동적인 기능을 부여함</dd>
+</dl>
+
+<h5>문제2. 본인의 이름을 적고 4가지 관점에서 정의 하는 목록을 만들자</h5>
+<dl>
+ <dt>홍길동</dt>
+ <dd>아버지를 아버지라 부르지 못한 한을 품고...</dd>
+ <dd>동에서 서로 번쩍하며 초스피드 이동이 가능한 </dd>
+ <dd>오랜 세월 살아와서 인터넷에는 무지한</dd>
+ <dd>그러나 최고 유명 인사로...</dd>
+</dl>
+
+<hr>
+<h1>목록 앞의 모양 지정 : type= </h1>
+<hr>
+
+<h2>ol type="1/a/A/i/I"</h2>
+
+<h3>type="1"</h3>
+<ol type="1">
+ <li>html</li>
+ <li>head</li>
+ <li>title</li>
+ <li>body</li>
+ <li>hn(1~6)</li>
+ <li>p</li>
+</ol>
+
+<h3>type="a"</h3>
+<ol type="a">
+ <li>html</li>
+ <li>head</li>
+ <li>title</li>
+ <li>body</li>
+ <li>hn(1~6)</li>
+ <li>p</li>
+</ol>
+
+<h3>type="A"</h3>
+<ol type="A">
+ <li>html</li>
+ <li>head</li>
+ <li>title</li>
+ <li>body</li>
+ <li>hn(1~6)</li>
+ <li>p</li>
+</ol>
+
+<h3>type="i"</h3>
+<ol type="i">
+ <li>html</li>
+ <li>head</li>
+ <li>title</li>
+ <li>body</li>
+ <li>hn(1~6)</li>
+ <li>p</li>
+</ol>
+
+<h3>type="I"</h3>
+<ol type="I">
+ <li>html</li>
+ <li>head</li>
+ <li>title</li>
+ <li>body</li>
+ <li>hn(1~6)</li>
+ <li>p</li>
+</ol>
+
+<h2>ul type="disc/square/circle"</h2>
+
+<h3>type="disc"</h3>
+<ul type="disc">
+ <li>hr</li>
+ <li>br</li>
+ <li>pre</li>
+</ul>
+
+<h3>type="square"</h3>
+<ul type="square">
+ <li>hr</li>
+ <li>br</li>
+ <li>pre</li>
+</ul>
+
+<h3>type="circle"</h3>
+<ul type="circle">
+ <li>hr</li>
+ <li>br</li>
+ <li>pre</li>
+</ul>
+
+<hr>
+<h2>하위목록 만들기</h2>
+
+<ul>
+ <li>html
+  <ol> 
+   <li>tag
+    <ul type="circle">
+     <li>block - 줄이 바뀌는 태그</li>
+     <li>inline - 한 줄에 나란히 오는 태그</li>
+    </ul> 
+   </li> 
+   <li>속성</li>
+   <li>속성값</li>
+  </ol>
+ </li>
+ <li>css
+  <ol>
+   <li>선택자
+    <ul>
+     <li>tag 선택자</li>
+     <li>ID 선택자</li>
+     <li>class 선택자</li>
+    </ul> 
+   </li>
+   <li>속성</li>
+   <li>속성값</li> 
+  </ol>
+ </li>
+ <li>js</li>
+</ul>
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+

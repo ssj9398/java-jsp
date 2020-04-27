@@ -1,0 +1,94 @@
+﻿<html>
+ <head>
+  <title>a로 링크 걸기</title>
+ </head>
+ <body>
+<hr> 
+ <h1>a로 링크 걸기</h1>
+<hr>
+<p>
+ &lt;a href="링크경로"&gt; <br>
+ 링크 걸린 텍스트는 밑줄이 나타나며<br>
+ 방문한 적이 없는 곳은 파란색,(초기링크)<br>
+ 방문 했던 곳은 보라색,<br>	
+ 활성화(누르는 동안) 때는 빨강색으로 표시 됨.
+</p>
+
+<hr>
+ <h5>문제. test08-1문서의 5번째 사진으로 이동하는 링크 완성하기</h5>
+ <a href="test08-1.htm#ph05">test08-1.htm(photo-5)</a>
+<hr>
+
+<h2>절대경로로 외부사이트 연결</h2>
+웹표준 학습 : <a href="https://www.w3schools.com/">w3schools.com</a>
+
+<h2 id="h2-02">상대경로로 내 서버의 웹문서 연결</h2>
+ <a href="test07.htm">img로 이미지 넣기(test07.htm)</a>
+ <a href="test06.htm">form으로 사용자와 연결(test06.htm)</a>
+ 
+<h2>상대경로로 내 서버의 이미지 연결</h2>
+ <a href="img/squirrel.jpg" target="_blank">다람쥐(squirrel.jpg)</a>
+ <a href="img/bear.jpg" target="_blank">곰곰곰...(bear.jpg)</a>
+ 
+<h2>절대경로로 외부사이트의 이미지 연결</h2>
+ <a href="https://tpc.googlesyndication.com/daca_images/simgad/13833172177662473222"
+ target="_blank">banner</a>
+
+<h2>상대경로로 내 서버의 동영상 연결</h2>
+ <a href="img/trees.mp4" target="_blank">동영상(trees.mp4)</a>
+
+<h2>상대경로로 내 서버의 *.txt 연결</h2>
+ <a href="link.txt" target="_blank">텍스트문서(link.txt)</a>
+
+<h2>브라우저가 처리 불가한 파일 - 다운로드 됨</h2>
+ <a href="img.zip"><b>압축파일</b>(img.zip)</a>
+
+<hr>
+<h2>img에 링크 걸기</h2>
+ <a href="https://www.naver.com/" target="_blank" title="www.naver.com">
+  <img src="img_submit.gif">
+ </a>
+ <a href="https://www.daum.net/" target="_blank">
+  <img src="img/daum-logo.png" height="60" alt="다음 로고" title="다음으로 이동">
+ </a>
+ 
+<h5>문제. 아이티윌부산 로고이미지를 표시하고 클릭하면 사이트로 이동하는 링크 걸기
+ <small>
+  (새 탭에 열리며 마우스오버시 설명 글자에 '아이티윌부산으로 이동' 문구를 표시하기)
+ </small>
+</h5>
+
+<a href="https://itwillbs.co.kr/" target="_blank"> 
+ <img src="img/itwill_logo.png" alt="아이티윌부산 로고" title="아이티윌부산으로 이동">
+</a>
+
+<hr>
+<h2>target - 링크를 여는 방식 지정</h2>
+<ol>
+ <li>target="_self" - 현재 창 열기 (기본값)</li>
+ <li>target="_blank" - 
+  <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">
+  새 탭에 열기</a> 
+ </li>
+ <li>target="_top"- 프레임구조 없이 브라우저 전체에 하나로 열기</li>
+ <li>target="_parent" - 한 단계 상위 창(부모창)에 열기</li>
+</ol>
+
+
+ 
+<hr>
+ <a href="#" title="페이지 최상단으로 이동">top</a>
+<hr>
+
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+

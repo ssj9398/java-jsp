@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html> <!-- 현재 문서가 웹표준 문서(html5버전)임을 브라우저에게 알려줌 -->
+<html>
+<head>
+ <title>html5에서 추가된 폼요소들</title>
+</head>
+<body>
+<hr>
+<h1>html5에서 추가된 input type들</h1>
+<hr>
+<form action="test.jsp" method="POST"> 
+<ul>
+ <li> <input type="time"> time : 시분초 지정가능한 상자 </li>
+ <li> <input type="datetime-local"> datetime-local : 년월일시분초 지정가능한 상자 </li>
+ <li> <input type="date"> date : 년월일 지정가능한 상자</li>
+ <li> <input type="week"> week : 년주 지정가능한 상자</li>
+ <li> <input type="month"> month : 년월 지정가능한 상자</li>
+ <li> <input type="number"> number : 숫자값을 지정가능한 상자
+  <ol>
+   <li> <input type="number" min="0"> min="n" 속성으로 최소값을 지정
+   <li> <input type="number" max="50"> max="n" 속성으로 최대값을 지정 
+   <li> <input type="number" step="5"> step="n" 속성으로 증감 간격을 지정
+  </ol>
+ </li>
+ <li> <input type="range"> range : 범위내의 값을 지정가능한 상자</li>
+ <li> <input type="tel"> tel : 전화번호 형식을 지정가능한 상자(가상키패드 변화) </li>
+ <li> <input type="email"> email : 이메일형식을 지정가능한 상자(가상키패드 변화)<br>
+  브라우저가 알맞는 형식인지 체크해줌(@ 여부..)
+ </li>
+ <li> <input type="url"> url : url주소형식을 지정가능한 상자(가상키패드 변화)<br>
+  브라우저가 알맞는 형식인지 체크해줌(프로토콜 여부)
+ </li>
+ <li> <input type="search"> search : 검색필드 지정가능한 상자(삭제버튼)
+ </li>
+ <li> <input type="color"> color : 색상값을 지정가능한 상자</li>
+</ul>
+ <input type="submit"> <input type="reset">
+</form>
+
+<hr>
+<h2>html5에서 추가된 input type의 속성들</h2>
+<form action="test2.jsp" method="POST">
+<ul>
+ <li> <input type="text" placeholder="https://www.abc.com"> placeholder=abc : 
+  입력예시를 보여줌</li>
+ <li> <input type="text" required> required(required="required") : 필수 입력요소로 지정</li>
+ <li> <input type="text" autofocus> autofocus : 해당 요소에 커서가 미리 위치 </li>
+ <li> <input type="text" autocomplete="off"> autocomplete="on/off" : 자동완성 기능을 켬/끔 </li>
+ <li> <input type="text" value="VIP" readonly> readonly : 입력영역이 읽기전용으로(변경불가) </li>
+ <li> <input type="text" value="A-team" disabled> disabled : 입력영역이 비활성화 </li>
+</ul>
+
+
+<input type="submit"> <input type="reset">
+</form>
+
+</body>
+</html>
+
+
+
+

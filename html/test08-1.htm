@@ -1,0 +1,105 @@
+﻿<html>
+ <head>
+  <title>내부 링크 걸기</title>
+ </head>
+ <body>
+<hr> 
+ <h1><small>페이지 안에서 이동하는</small> 내부 링크 걸기</h1>
+<hr>
+
+<p>페이지 안에서 찾아가고자 하는 곳의 태그에 id값을 지정하고<br>
+  id값을 주소처럼 활용하여 링크를 걸어준다.<br>
+  (id는 고유한 값임)
+</p>
+
+<pre>
+ &lt;a href="#abc"&gt; ... &lt;/a&gt;          ----  링크 걸기
+  
+  .........
+
+
+ &lt;tag id="abc"&gt; ... &lt;/tag&gt;          ----  찾아갈 곳의 id값 주기
+
+</pre>
+  <a href="test08.htm#h2-02">
+   test08.htm(상대경로로 내 서버의 웹문서 연결)
+  </a>
+<nav id="menu">
+ <ul>
+  <li><a href="#ph01">photo-1</a></li>
+  <li><a href="#ph02">photo-2</a></li>
+  <li><a href="#ph03">photo-3</a></li>
+  <li><a href="#ph04">photo-4</a></li>
+  <li><a href="#ph05">photo-5</a></li>
+  <li><a href="#ph06">photo-6</a></li>
+  <li><a href="#ph07">photo-7</a></li>
+  <li><a href="#ph08">photo-8</a></li>
+  <li><a href="#ph09">photo-9</a></li>
+  <li><a href="#ph10">photo-10</a></li>
+ </ul>
+</nav>
+
+<hr id="ph01">
+<h2>1. photo</h2>
+<img src="img/abend.jpg" height="600">   
+<br><br><br><br><br><br><br><br> 
+<a href="#menu">메뉴바로 가기</a>
+
+
+<hr id="ph02">
+<h2>2. photo</h2>
+<img src="img/arches.jpg" height="600">   
+<br><br><br><br><br><br><br><br> 
+<a href="#menu">메뉴바로 가기</a>
+
+<hr id="ph03">
+<h2>3. photo</h2>
+<img src="img/art.jpg" height="600">   
+<br><br><br><br><br><br><br><br> 
+<a href="#menu">메뉴바로 가기</a>
+
+<hr id="ph04">
+<h2>4. photo</h2>
+<img src="img/away.jpg" height="600">   
+<br><br><br><br><br><br><br><br>
+<a href="#menu">메뉴바로 가기</a>
+ 
+<hr id="ph05">
+<h2>5. photo</h2>
+<img src="img/backpack.jpg" height="600">   
+<br><br><br><br><br><br><br><br> 
+<a href="#menu">메뉴바로 가기</a>
+
+<hr id="ph06">
+<h2>6. photo</h2>
+<img src="img/bare.jpg" height="600">   
+<br><br><br><br><br><br><br><br> 
+<a href="#menu">메뉴바로 가기</a>
+
+<hr id="ph07">
+<h2>7. photo</h2>
+<img src="img/bastei.jpg" height="600">   
+<br><br><br><br><br><br><br><br> 
+<a href="#menu">메뉴바로 가기</a>
+
+<hr id="ph08">
+<h2>8. photo</h2>
+<img src="img/bear.jpg" height="600">   
+<br><br><br><br><br><br><br><br>
+<a href="#menu">메뉴바로 가기</a> 
+
+<hr id="ph09">
+<h2>9. photo</h2>
+<img src="img/cat.jpg" height="600">   
+<br><br><br><br><br><br><br><br> 
+<a href="#menu">메뉴바로 가기</a>
+
+<hr id="ph10">
+<h2>10. photo</h2>
+<img src="img/coffee.jpg" height="600">   
+<br><br><br><br><br><br><br><br> 
+<a href="#menu">메뉴바로 가기</a>
+
+<a href="#">TOP</a> <!-- #은 페이지 최상단을 뜻함(임시링크) -->
+</body>
+</html>

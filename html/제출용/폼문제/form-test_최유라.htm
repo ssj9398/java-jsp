@@ -1,0 +1,88 @@
+﻿
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>ITWILL 회원가입</title>
+ </head>
+
+ <body>
+ <h1>ITWILL 회원가입</h1>
+ <form action="test1.jsp" method="POST">
+
+ <fieldset>
+  <legend>필수입력</legend>
+   <label> ♣ 이름 <input type="text" required></label> <br>
+   <label> ♣ 아이디 <input type="text" maxlength="10" placeholder="6~10자 영문과 숫자 조합" required></label> <br>
+   <label> ♣ 비밀번호 <input type="password" required></label>
+  <p> ♣ 성별 <br>
+   <label><input type="radio" name="gen" required>남</label> <br>
+   <label><input type="radio" name="gen" checked required>여</label> <br>
+   <label><input type="radio" name="gen" required>기타</label>
+  </p>
+   <label> ♣ 전화번호 <input type="tel" required></label> <br>
+   <label> ♣ email <input type="email" required></label> <br>
+
+ <hr>
+  <p> ♣ 아이티윌부산이 제공하는 정보를 받으시겠습니까? <br>
+   <label><input type="radio" name="info" checked required>받습니다</label> <br>
+   <label><input type="radio" name="info" required>받지 않겠습니다.</label>
+  </p>
+
+  <p> ♣ 정보나 이벤트 소식을 어떻게 받으시겠습니까? <br>
+   <label><input type="checkbox" name="news" checked>이메일</label> <br>
+   <label><input type="checkbox" name="news">문자</label> <br>
+   <label><input type="checkbox" name="news" checked>카카오톡</label> <br>
+   <label><input type="checkbox" name="news">우편</label>
+  </p>
+ </fieldset>
+
+ <br><br>
+ <fieldset>
+   <p> ♣ 프로필사진 <br>
+   <input type="file">
+   </p>
+
+  <legend>선택입력</legend>
+   <p> ♣ 자기소개를 해주세요 <br>
+   <textarea cols="100" rows="10"> 간단히 작성하세요 </textarea>
+   </p>
+
+   <label> ♣ 블로그 주소 <input type="url"></label> <br>
+
+   <p> ♣ 학과를 선택해주세요 <br>
+   <select>
+    <option>컴퓨터공학과</option>
+    <option selected>산업공학과</option>
+    <option>기계공학과</option>
+    <option>화학공학과</option>
+    <option>전기전자공학과</option>
+    <option>건축공학과</option>
+   </select>
+   </p>
+
+   <p> ♣ 취미, 특기를 선택해주세요 <br>
+   <select multiple size="4">
+    <optgroup label="취미">
+     <option>등산</option>
+     <option>여행</option>
+     <option selected>요리</option>
+     <option>게임</option>
+    </optgroup>
+    <optgroup label="특기">
+     <option>운동</option>
+     <option>바둑</option>
+     <option selected>음악</option>
+     <option>무용</option>
+    <optgroup>
+   </select>
+   </p>
+
+ </fieldset>
+
+ <button type="submit"><img src="aniyellow.gif" width="10px">가입</button>
+ <button type="reset"><img src="aniyellow.gif" width="10px">취소</button>
+
+ </form>
+
+ </body>
+</html>

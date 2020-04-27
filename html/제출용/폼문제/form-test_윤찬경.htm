@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>form 태그 써보기</title>
+</head>
+<body>
+<form action="test3.jsp" method="POST">
+<h1>   ITWILL 회원가입 </h1>
+<fieldset>
+<legend>[ 필 수 입 력 ]</legend>
+<label> ♣ 이름 : <input type="text" autofocus></label> <br>
+<label> ♣ 아이디 : <input type="text" placeholder="6~10자 영문과 숫자 조합" maxlength="10"></label> <br>
+<label> ♣ 비밀번호 : <input type="password"></label> <br>
+<br>
+<label> ♣ 성별 <br>
+<label><input type="radio" name="gender">남자</label><br>
+<label><input type="radio" name="gender" checked>여자</label><br>
+<label><input type="radio" name="gender">기타</label><br>
+<br>
+<label> ♣ 전화번호 : <input type="tel"></label> <br>
+<label> ♣ e-mail : <input type="email"></label> <br>
+<br>
+<hr>
+<label> ♣ 아이티윌부산이 제공하는 정보를 받으시겠습니까?<br>
+<label><input type="radio" name="promo" checked>받습니다</label><br>
+<label><input type="radio" name="promo">받지 않겠습니다</label><br>
+<br>
+<label> ♣ 정보나 이벤트 소식을 어떻게 받으시겠습니까?<br>
+<label><input type="checkbox" checked>이메일</label><br>
+<label><input type="checkbox">문자</label><br>
+<label><input type="checkbox" checked>카카오톡</label><br>
+<label><input type="checkbox">우편</label><br>
+</fieldset>
+<br>
+
+<fieldset>
+<legend>[ 선 택 입 력 ]</legend>
+<br>
+<label> ♣ 프로필 사진을 올려주세요
+<input type="file"><br>
+<br>
+<label> ♣ 자기소개를 해주세요<br>
+<textarea cols="200" rows="10">간단히 작성하세요</textarea>
+<br>
+<label> ♣ 블로그 주소 <input type="url"></label><br>
+<br>
+<label> ♣ 학과를 선택해주세요<br>
+<select>
+<option>컴퓨터공학과</option>
+<option selected>산업공학과</option>
+<option>기계공학과</option>
+<option>화학공학과</option>
+<option>전기전자공학과</option>
+<option>건축공학과</option>
+</select><br>
+<br>
+<label> ♣ 취미, 특기를 선택해주세요<br>
+<select multiple>
+<optgroup label="취미">
+<option>등산</option>
+<option>여행</option>
+<option selected>요리</option>
+<option>게임</option>
+</optgroup>
+<optgroup label="특기">
+<option>운동</option>
+<option>바둑</option>
+<option selected>음악</option>
+<option>무용</option>
+</optgroup>
+</select>
+
+</fieldset>
+<button type="button"><img src="aniyellow.gif" width="20px">가입</button>
+<button type="reset"><img src="aniyellow.gif" width="20px">취소</button>
+
+
+</form>
+</body>
+</html>

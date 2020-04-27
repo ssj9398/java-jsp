@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>test</title>
+</head>
+<body>
+<h1>ITWILL 회원가입</h1>
+<form action="test.jsp" method="post">
+<fieldset>
+<legend>[ 필수 입력 ]</legend>
+  <label> ♣ 이름 <input type="text" required> </label><br>
+  <label> ♣ 아이디 <input type="text" placeholder="6~10자 영문과 숫자 조합" minlength=6 maxlength=10 required> </label><br>
+  <label> ♣ 비밀번호 <input type="password" required> </label><br><br>
+          ♣ 성별 <br><input type="radio" value="ra">남<br>
+		<input type="radio" value="ra" checked>여<br>
+		<input type="radio" value="ra">기타<br><br>
+♣ 전화번호 <label><input type="tel" required></label><br>
+♣ email <label><input type="email" required></label><br>
+<hr><br>
+♣ 아이티윌부산이 제공하는 정보를 받으시겠습니까?<br>
+<input type="radio" value="ra2" checked>받습니다<br>
+<input type="radio" value="ra2">받지 않겠습니다<br><br>
+♣ 정보나 이벤트 소식을 어떻게 받으시겠습니까?<br>
+<input type="checkbox" value="ch" required="required" checked>이메일<br>
+<input type="checkbox" value="ch" required="required">문자<br>
+<input type="checkbox" value="ch" required="required" checked>카카오톡<br>
+<input type="checkbox" value="ch"required="required" >우편<br>
+</fieldset>
+<br><br>
+<fieldset>
+<legend>[ 선택 입력 ]</legend>
+♣ 프로필사진을 업로드하세요<br> <input type="file"><br><br>
+
+♣ 자기소개를 해주세요<br>
+ <label> <textarea cols=80 rows=10 placeholder="간단히 작성하세요"></textarea></label><br><br>
+♣ 블로그 주소 <label><input type="url"></label><br><br>
+♣ 학과를 선택해주세요<br>
+<select>
+ <option>컴퓨터공학과</option>
+ <option selected>산업공학과</option>
+ <option>기계공학과</option>
+ <option>화학공학과</option>
+ <option>전기전자공학과</option>
+ <option>건축공학과</option>
+</select><br><br>
+♣ 취미, 특기를 선택해주세요<br>
+<select multiple size="4">
+ <optgroup label="취미">
+  <option>등산</option>
+  <option>여행</option>
+  <option selected>요리</option>
+  <option>게임</option>
+ </optgroup>
+ <optgroup label="특기">
+  <option>운동</option>
+  <option>바둑</option>
+  <option selected>음악</option>
+  <option>무용</option>
+ </optgroup>
+</select>
+</fieldset><br>
+
+<button type="submit"><img src="aniyellow.gif">가입</button>
+<button type="button"><img src="aniyellow.gif">취소</button>
+</form>
+
+
+
+
+</body>
+</html>

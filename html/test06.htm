@@ -1,0 +1,192 @@
+﻿<html>
+ <head>
+  <title>form</title>
+ </head>
+ <body>
+<hr>
+ <h1>form으로 사용자와 연결하는 페이지 만들기</h1>
+<hr>
+<form action="test.jsp" method="POST">
+ <h2>input type="text" 한 줄 글상자</h2>
+  <label for="name">name</label> <input type="text" id="name"> <br>
+  <label>Birthday <input type="date"></label> <br>
+ <h3>size="n"과 maxlength="n"로 창의 길이와 입력데이터의 최대치를 제한</h3> 
+  <label>ID <input type="text" maxlength="8" size="20"></label>
+
+ <h2>input type="password" 암호 글상자</h2>
+ <label for="pass">password</label> 
+ <input type="password" id="pass" maxlength="12"> <br>
+
+
+<hr>
+ <h2>input type="checkbox" 제시된 항목 중에서 다중선택이 가능한 체크박스</h2>
+ <h3>checked(checked="checked") 속성을 추가하여 초기 선택 항목 지정 가능</h3>
+
+<p>통근 수단은? <br>
+ <label> <input type="checkbox" name="move" value="m1"> 도보</label> <br>
+ <label> <input type="checkbox"> 자전거</label> <br>
+ <label> <input type="checkbox" checked> 버스</label> <br>
+ <label> <input type="checkbox" checked="checked"> 지하철</label> <br>
+ <label> <input type="checkbox"> 자가용</label>
+</p>
+ 
+ <h2>input type="radio" 제시된 항목 중에서 한가지만 선택 가능한 라디오버튼</h2>
+ <h3> 동일한 질문하의 항목들은 <mark>name의 값을 서로 일치</mark>시켜준다.</h3>
+ <h3>checked(checked="checked") 속성을 추가하여 초기 선택 항목 지정 가능</h3>
+ 
+<p> 
+ <label> <input type="radio" name="gender"> male   </label><br>
+ <label> <input type="radio" checked name="gender"> female </label><br>
+ <label> <input type="radio" name="gender"> other </label><br>
+</p>
+
+<p>아이티윌부산에서 전하는 이벤트 소식을 받으실?<br>
+ <label> <input type="radio" name="event" checked> yes</label> <br>
+ <label> <input type="radio" name="event"> no</label>
+</p>
+
+<h2>textarea ... /textarea 큰 글상자</h2>
+ <h3>cols="n" rows="n" 속성으로 상자의 가로 세로 크기 지정 가능</h3>
+
+ <textarea cols="150" rows="10"> </textarea>
+
+<h2>select 제시된 항목 중에서 선택하는 드롭다운목록</h2>
+ <pre>
+  select
+    option.../option
+    option.../option
+     ...
+  /select
+ </pre>
+<h3>option에 selected속성을 추가하여 초기 선택 항목 지정 가능</h3>
+
+<p>가장 자신 있는 과목은?
+<select>
+ <option>WEB</option>
+ <option>JAVA</option>
+ <option selected>JSP</option>
+ <option>ORACLE</option>
+</select>
+</p>
+<h3>select에 multiple속성을 추가하여 다중선택 가능</h3>
+<p>자신 있는 과목은? (다중선택 가능) <br>
+ <select multiple>
+  <option>html</option>
+  <option selected>css</option>
+  <option>javascript</option>
+  <option selected>JAVA</option>
+  <option>JSP</option>
+  <option>Oracle</option>
+  <option>Job</option>
+  <option>project</option>
+ </select>
+</p>
+
+<h3>select에 size="n"속성을 추가하여 n개의 항목이 보이는 상자형태로 </h3>
+<p>가장 집중도가 떨어지는 시간은? <br>
+<select size="5">
+ <option>1교시</option>
+ <option>2교시</option>
+ <option>3교시</option>
+ <option selected>4교시</option>
+ <option>5교시</option>
+ <option>6교시</option>
+ <option>7교시</option>
+ <option>8교시</option>
+</select>
+</p>
+
+<h3>여러 option 항목들을 optgroup으로 묶어서 그룹화</h3>
+<pre>
+&lt;select&gt;
+ &lt;optgroup label="*"&gt;   ------ optgroup에 label속성으로 해당 그룹의 제목표현
+  &lt;option&gt;...&lt;/option&gt;
+  &lt;option&gt;...&lt;/option&gt;
+  ...
+ &lt;/optgroup&gt; 
+ &lt;optgroup label="*"&gt;
+  &lt;option&gt;...&lt;/option&gt;
+  &lt;option&gt;...&lt;/option&gt;
+  ...
+ &lt;/optgroup&gt;
+ &lt;/select&gt;
+</pre>
+
+<p>첫 평가시험 시간은?<br>
+<select size="5">
+<optgroup label="JSP">
+ <option>1교시</option>
+ <option>2교시</option>
+ <option>3교시</option>
+ <option>4교시</option>
+</optgroup>
+<optgroup label="WEB">
+ <option>5교시</option>
+ <option selected>6교시</option>
+ <option>7교시</option>
+ <option>8교시</option>
+</optgroup>
+</select>
+</p>
+
+<h5>문제 1.</h5>
+<p>복습이 필요한 과목은?<br>
+<select>
+<optgroup label="WEB">
+ <option>html</option>
+ <option>css</option>
+ <option>js</option>
+</optgroup>
+<optgroup label="Server">
+ <option>oracle</option>
+ <option>jsp</option>
+</optgroup>
+</select>
+</p>
+
+<h2>input type=hidden - 방문자에게는 보이지 않는 데이터 전송용</h2>
+
+<input type="hidden" value="VIP">
+
+<h2>input type=file  - 파일 전송용 </h2>
+<input type="file">
+
+<h2>input type=submit/reset/button - (전송/초기화/일반) 버튼 생성</h2>
+<p>value 속성의 값으로 버튼의 글자를 변경 가능 </p>
+
+<input type="button" value="누르지마시오" onclick="alert('눌렀구만')">
+
+<h2>input type=image -전송역할의 버튼을 대체하는 이미지를 지정</h2>
+<p>src속성으로 이미지 경로를 지정</p>
+<input type="image" src="img_submit.gif">
+
+<h2>button <small><i>버튼의 글자</i></small> /button</h2>
+<p>
+ button태그는 반드시 종료태그와 함께 쓰며 글자를 그 사이에 기입함.<br>
+ 기본적으로 전송역할을 하는데 <br>
+ 취소역할을 하려면 type="reset",<br>
+ 일반 버튼은 type="button"로 지정하면 됨.<br>
+ 다른 태그를 내부에 쓸 수 있어 다양한 활용 가능.
+</p>
+<button>OK</button>
+<button type="reset">NO</button>
+<button type="button" onclick="alert('Do Not Touch')"><b>c</b>lick</button> <br>
+<button type="button"><img src="img_submit.gif" width="20px"> LOG-IN</button> 
+
+<hr>
+ <input type="submit" value="확인">
+ <input type="reset" value="취소">
+</form>
+
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+

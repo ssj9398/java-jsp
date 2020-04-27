@@ -1,0 +1,105 @@
+<html>
+	<head>
+		<title>FORM</title>
+	</head>
+	
+	<body>
+		<h1>ITWILL 회원가입</h1>
+
+		<form action="a.jsp" method="get">
+			<fieldset>
+				<legend>[ 필수 입력 ]</legend>
+				
+				<p>
+					<label for="name">⊙ 이름</label>
+					<input type="text" id="name">
+				</p>
+				<p>
+					<label for="memId">⊙ 아이디</label>
+					<input type="text" id="memId" maxlength="10" placeholder="6~10자 영문과 숫자 조합">
+				</p>
+				<p>
+					<label for="pass">⊙ 비밀번호</label>
+					<input type="password" id="pass">
+				</p>
+				<p>
+					<label for="gen">⊙ 성별</label><br>
+					<input type="radio" id="gen" name="gen" value="man">남<br>
+					<input type="radio" id="gen" name="gen" value="girl" checked="checked">여<br>
+					<input type="radio" id="gen" name="gen" value="etc">기타
+				</p>
+				<p>
+					<label for="callNum">⊙ 전화번호</label>
+					<input type="text" id="callNum">
+				</p>
+				<p>
+					<label for="email">⊙ 이메일</label>
+					<input type="email" id="email">
+				</p>
+				
+				<hr>
+				
+				<p>
+					<label for="news">⊙ 아이티윌 부산이 제공하는 정보를 받으시겠습니까?</label><br>
+					<input type="radio" id="news" name="info" value="agree" checked="checked">받습니다<br>
+					<input type="radio" id="news" name="info" value="dce">받지 않겠습니다
+				</p>
+				<p>
+				<label for="letter">⊙ 정보나 이벤트 소식을 어떻게 받으시겠습니까?</label><br>
+					<input type="radio" id="letter" value="le_email" checked="checked">이메일<br>
+					<input type="radio" id="letter" value="le_sms">문자<br>
+					<input type="radio" id="letter" value="le_kakao" checked="checked">카카오톡<br>
+					<input type="radio" id="letter" value="le_l">우편
+				</p>
+			</fieldset>
+
+			<fieldset>
+				<legend>[ 선택 입력 ]</legend>
+				
+				<p>
+					<label for="profile_img">⊙ 프로필사진</label><br>
+					<input type="file" id="profile_img">
+				</p>
+				<p>
+					<label for="intro">⊙ 자기소개를 해주세요</label><br>
+					<textarea id="intro" rows="10" cols="70" placeholder="간단히 작성하세요"></textarea>
+				</p>
+				<p>
+					<label for="blog">⊙ 블로그 주소</label>
+					<input type="text" id="blog">
+				</p>
+				<p>
+					<label for="hak">⊙ 학과를 선택해주세요</label><br>
+					<select id="hak">
+						<option value="c1">컴퓨터공학과</option>
+						<option value="c2">산업공학과</option>
+						<option value="c3">기계공학과</option>
+						<option value="c4">화학공학과</option>
+						<option value="c5">전기전자공학과</option>
+						<option value="c6">건축공학과</option>
+					</select>
+				</p>
+				<p>
+					<label for="hob">⊙취미, 특기를 선택해주세요</label><br>
+					<select id="hob" size="4" multiple>
+						<optgroup label="취미">
+							<option value="hob1">등산</option>
+							<option value="hob2">여행</option>
+							<option value="hob3" selected="selected">요리</option>
+							<option value="hob4">게임</option>
+						</optgroup>
+						<optgroup label="특기">
+							<option value="hob5">운동</option>
+							<option value="hob6">바둑</option>
+							<option value="hob7" selected="selected">음악</option>
+							<option value="hob8">무용</option>
+						</optgroup>
+					</select>
+				</p>
+			</fieldset>
+			<br><br>
+			<button type="submit"><img src="aniyellow.gif" width="12" />가입</button>
+			<button type="button"><img src="aniyellow.gif" width="12" />취소</button>
+		</form>
+	</body>
+</html>
