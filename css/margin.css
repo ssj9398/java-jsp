@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+#wrap {border: 1px solid red;
+width: 1000px;
+margin: 0 auto; }
+
+ h1 {background-color: #4da;
+ border-left: 10px solid;
+ border-right: 10px solid;
+ width: 600px;
+/*  margin-left: auto;
+ margin-right:auto; */
+ margin: 3em auto;
+ color: #074;
+ text-align: center;}
+
+
+ /* margin의 방향별 지정 속성 */
+#ol-01 {background-color: #e50;}
+
+#ol-01>li {border: 1px solid;}
+
+.mt {margin-top: 50px;}
+.mr {margin-right: 20%;}
+.mb {margin-bottom: 50px;}
+.ml {margin-left: 20%;} 
+
+
+ /* margin의 값 갯수별 지정법 */
+#ul-01 {background-color: #4da;}
+
+#ul-01>li {border: 1px solid;}
+
+.mn1 {margin: 50px;}
+.mn2 {margin: 100px 50px; }
+.mn3 {margin: 50px 80px 0;}
+.mn4 {margin: 0 30% 20px 10%;}
+
+
+ /* inline요소에서의  margin적용 차이 */
+
+#inline {background-color: #aec;
+padding: 1em 2em;}
+
+#inline>*:not(h3) {border: 1px solid;
+ /* width: 500px;  height: 100px;
+  inline요소라 크기 적용이 안됨 */}
+
+#inline>a {margin: 80px /* inline요소라
+ 상하마진은 안됨 */;}
+#inline>i {margin: 40px/* inline요소라
+ 좌우마진은 인접요소의 값과 더하기가 됨 */;}
+
+
+ /* form */
+form {margin: 5em 2em;}
+
+.label {/* border: 1px solid; */}
+
+.p1 {margin-right: 20px;}
+.p2 {margin-right: 3px;}
+
+.sub-btn {width: 100px;
+ height: 30px;
+ margin-top: 50px;
+ margin-left: 100px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

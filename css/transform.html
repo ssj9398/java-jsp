@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>transform</title>
+<link href="transform.css" rel="stylesheet">
+</head>
+<body>
+<h1>transform 변형</h1>
+<ol>
+ <li>transform:translate(); 위치변형 함수 <br>
+  translateX(n); 수평으로 이동(음수 가능)<br>
+  translateY(n); 수직으로 이동(음수 가능)<br>
+  translate(Xn,Yn); 수평,수직으로 이동(음수 가능)
+ </li>
+ <li>transform:scale(); 크기변형 함수<br>
+  transform:scaleX(n); 수평으로  크기변형(n이 1보다 작으면 축소, 크면 확대)<br>
+  transform:scaleY(n); 수직으로  크기변형<br>
+  transform:scale(n,n); 수평,수직으로  크기변형
+ </li>
+ <li>transform:rotate(); 회전변형 함수</li>
+ <li>transform:skew(); 기울기변형 함수</li>
+</ol>
+
+
+<section id="sec01">
+ <h1>transform:translate(); 위치변형 함수</h1>
+ 
+ <p class="trans01">transform:translateX(800px);</p>
+ <p class="trans02">transform:translateX(-300px);</p>
+ <p class="trans03">transform:translateY(300px);</p>
+ <p class="trans04">transform:translateY(-300px);</p>
+ <p class="trans05">transform:translate(700px,-400px);</p>
+ <p class="trans06">transform:translate();</p>
+ <p class="trans07">transform:translate(100%,100%);</p>
+</section>
+
+ <div class="center">
+  <div class="box">
+   <b>요소의 수평수직 center 정렬</b>
+ 1. position: relative;
+    left: 50%;  top:50%;
+   --> 부모 영역의 절반에서 요소가 시작됨 
+ 
+ 2. transform:translate(-50%,-50%);
+   --> 요소 크기의 절반만큼 위,좌로 이동
+  </div>
+ </div>
+
+<section id="sec02">
+ <h1>transform:scale(); 크기변형 함수</h1>
+ <p class="sca01">transform:scale(0.5,0.5);<br>
+  <img src="img/monster.png">
+ </p>
+ <p class="sca02">transform:scale(2,2);<br>
+  <img src="img/monster.png">
+ </p>
+ <p class="sca03">transform:scaleX(0.5);<br>
+  <img src="img/monster.png">
+ </p>
+ <p class="sca04">transform:scaleY(0.5);<br>
+  <img src="img/monster.png">
+ </p>
+ <p class="sca05">transform:scale(1.2,0.3);<br>
+  <img src="img/monster.png">
+ </p>
+ <p class="sca06">width:150px; height:150px; <br>
+  <img src="img/monster.png">
+ </p>
+</section>
+
+
+<section id="sec03">
+ <h1>transform:rotate(); 회전변형 함수</h1>
+ <p class="rot01">transform:rotateX(360deg);<br>
+  <img src="img/monster.png">
+ </p>
+ <p class="rot02">transform:rotateX(90deg);<br>
+  <img src="img/monster.png">
+ </p>
+ <p class="rot03">transform:rotateY(45deg);<br>
+  <img src="img/monster.png">
+ </p>
+ <p class="rot04">transform:rotateY(-180deg);<br>
+  <img src="img/monster.png">
+ </p>
+ <p class="rot05">transform:rotate(360deg);<br>
+  <img src="img/monster.png">
+ </p>
+ <p class="rot06">transform:rotate(-1080deg);<br>
+  <img src="img/monster.png">
+ </p>
+ <p class="rot07">transform:rotate(-1080deg);<br>
+  <img src="img/monster.png">
+ </p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

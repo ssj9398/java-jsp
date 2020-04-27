@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+ h1 {border-left:10px solid;
+ background-color: #bff;
+ padding: 6px 0 8px 12px;
+  color: #036;}
+
+ h2 {border-bottom: 4px dashed;
+ margin: 3em 0;
+ padding: 4px 0 6px 10px;
+ background-color:#036;
+ color: #bff;  }
+
+
+
+
+
+   /* padding의 방향별 지정 속성 */
+#pad01 {background-color: #ccc;}
+
+#pad01>li {border: 1px solid;}
+
+.padd-t {padding-top: 20px;}
+.padd-r {padding-right: 50px;
+ text-align: right;}
+.padd-b {padding-bottom: 1em;}
+.padd-l {padding-left: 20%;}
+
+.ti {border: 1px solid;
+ text-indent: 20%;}
+
+#photo {background-color: #aef;
+ padding: 1em;}
+
+#photo>img {border: 1px solid #900;
+ width: 400px;}
+
+
+
+ /* padding의 값 갯수별 지정법 */
+#pad02 {background-color: #ed0;}
+
+#pad02>li {border: 1px solid #360;
+width: 20em;}
+
+.pn1 {padding: 30px;}
+.pn2 {padding: 10px 50px;}
+.pn3 {padding: 10px 50px 80px;}
+.pn4 {padding: 10px 10% 20px 20%;}
+
+ 
+#photo2>img {margin-right:50px;
+width: 300px;
+border: 1px solid;
+box-shadow: 2px 3px 6px #333;}
+
+.pnp1 {padding: 15px;}
+.pnp2 {padding: 30px 10px;}
+.pnp3 {padding: 10px 14px 80px;}
+.pnp4 {padding: 50px 10px 20px 10px;}
+
+
+ /* form */
+
+form {margin: 100px 30px;}
+
+fieldset {padding: 3em 2em;}
+
+legend {padding: 0.3em 0.5em;
+text-transform: capitalize;
+text-align: center;
+font-size: 1.5em;
+font-weight: 600;
+font-family: "Verdana", sans-serif;}
+
+.label, .sub-btn {
+background-color: #36d;
+text-transform: uppercase;	
+font-size: 1.1em;
+color: #fff;  } 
+
+.label { }
+.p1 {padding: 4px 20px;} 
+.p2 {padding: 4px 9px;}
+
+#id, #pwd {padding: 5px 14px;}
+
+.sub-btn {width: 200px; 
+   height: 50px; 
+ /* padding: 10px 70px; */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

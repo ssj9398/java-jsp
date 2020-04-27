@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS basic</title>
+<link href="basic.css" rel="stylesheet">
+<style type="text/css">
+ #li02 {color: orange; 
+  text-decoration:underline; }
+
+ ul {border: 4px double #399;
+  margin: 50px; 
+  padding: 20px;}
+  
+ li {margin-bottom: 1em;
+  list-style: circle;} 
+</style>
+</head>
+<body>
+<h1>CSS basic</h1>
+
+<h2>CSS 적용법</h2>
+<ul>
+ <li class="li01">External CSS - 외부파일 방식. CSS소스를 *.css로 독립시켜 만들고 html문서와  연결하여 적용.</li>
+ <li id="li02">Internal CSS - 내부 방식. CSS소스를 html문서의 head태그 내에 style태그를 활용하여 적용.</li>
+ <li style="color:gray;text-decoration:underline;">Inline CSS - 태그 속성 방식. CSS소스를  html문서의 해당 태그 바로 뒤에 style속성을  활용하여 적용.</li>
+</ul>
+
+<h2>CSS 선택자(대표 3가지) 구별</h2>
+<ul>
+ <li>tag선택자 - html tag를 그대로 불러와서 선택자로 활용.<br>
+ <span class="bg_01">p {  }</span> <br>
+  해당 tag는 모두 변경 적용 됨. (강제적, 자동적)
+ </li>
+ <li>class선택자 - tag 뒤에 class속성을 추가하고 값을 주어  선택자로 활용.<br>
+ <span class="li01 bg_01">.p {  }</span> <br>
+ class명은 중복적용이 가능하므로 같은 스타일을 여러 요소에 적용할 수 있다. (디자인적 필요에 씀)
+ </li>
+ <li>ID선택자 - tag 뒤에 id속성을 추가하고 값을 주어  선택자로 활용.<br>
+ <span class="bg_01">#p {  }</span> <br>
+ id명은 중복적용이 불가능하므로 같은 스타일을 여러 요소에 적용할 수 없다. (구조적 필요에 씀)
+ </li>
+</ul>
+
+
+
+</body>
+</html>
+
+
+
+
+

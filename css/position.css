@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+section {border: 4px solid #ccc;
+margin: 5em 1em;
+padding: 1em; }
+
+section>h2 {
+background-color:#ccc;
+padding: 5px 0 5px 12px;
+color: #333; }
+
+#sec01>p {position: static;
+ left: 500px;/* 기본값. 위치 이동 불가 */ }
+
+#sec02>p {position: relative;}
+
+.re01 {left: 500px;}
+.re02 {right: 100px;}
+.re03 {top: 100px;}
+.re04 {bottom: 100px;}
+.re05 {left: 800px;
+ top:200px;}
+.re06 {border: 1px solid red;
+width: 300px; 
+ left: 100%;}
+.re07 {border: 1px solid blue;
+width: 300px; 
+bottom:100%;}
+
+#sec02:hover>p {
+ position: static; }
+
+#sec02>h2 {
+ position: relative;
+ bottom: 2.3em;	 }
+
+.re08 {	
+ background-color: #ee0;
+ position: relative;
+ left: 0; /* transition을 주기 위해 초기값으로 설정 */
+ bottom: 0; }
+	
+#sec02:hover>.re08 {
+ left: 900px;
+ bottom: 400px;	
+ transition:3s ease-out;}
+
+
+ /* position:absolute */
+
+#sec03 {position: relative;
+height: 500px; }
+
+#sec03>p {border: 4px solid orange;
+ width: 300px; height: 50px;
+ margin:0;
+ position: absolute;} 
+
+.ab01 {left: 0;  top:0;}
+.ab02 {right: 0; bottom: 0;}
+.ab03 {left: 0; bottom: 0;}
+.ab04 {right: 0; top:0;}
+.ab05 {left: 50%; top: 50%;}
+
+
+.ab06 {
+ left: -500px; top:40%;	}
+
+#sec03:hover>.ab06 {
+ left: 30%; top:40%;
+ transition:3s ease-out;	}
+
+#sec03 {overflow: hidden;}
+
+ 
+ 
+  /* position:fixed; */
+
+#quick {
+background-color: #aef;
+width: 200px;	
+padding:10px;
+line-height: 1.8;	
+position: fixed;
+right: 0;
+/* top:30%; */
+bottom: 0;
+}
+
+#quick ul {	
+list-style: none; }
+
+#quick a {
+text-decoration: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

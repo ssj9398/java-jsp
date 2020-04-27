@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+.box {
+background-color:rgba(0,100,255,0.2); 
+margin: 3em 0;
+padding: 1em;}
+
+  /* 자간 */
+.ls01:hover {letter-spacing: -0.5em;}
+.ls02 {letter-spacing: 6px;}
+.ls03 {letter-spacing: -2px;}
+
+
+ /* 단어 간의 공간 */
+.ws01:hover {word-spacing: -2.5em;}
+.ws02 {word-spacing: 36px;}
+.ws03 {word-spacing: -10px;}
+
+
+ /* 줄 간격(행간) */
+
+.lh01 {line-height: 1em;}
+.lh02 {line-height: 2em;}
+.lh03 {line-height: 10px;}
+
+.lh04 {background-color: #000;
+ width: 300px;
+ height: 80px;
+ color: #fff;
+ text-align: center;
+ line-height: 80px;
+ /*한 줄 짜리 내용을 수직으로 중앙 정렬하기 */
+}
+
+pre {font-family: sans-serif;}
+
+
+
+
+
+
+
+
+
+
+
+
+

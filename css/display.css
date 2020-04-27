@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+ /* 서브메뉴 구현하기 */
+.mn04 {/* border: 1px solid red; */}
+
+.submn {/* border: 1px solid blue; */
+ display: none; /* 서브메뉴 평상시는 안보임 */}
+
+.mn04:hover>.submn {
+ display: block; /* 주메뉴4번째에 후버시
+ 서브메뉴 다시 나타남 */ }
+
+
+
+ /* 가로형 메뉴 구현 */
+header * {margin: 0; padding: 0;} 
+ 
+nav ul {list-style: none; /* 목록앞의
+모양 제거 */}
+
+/*  1. display 로 가로형 메뉴 구현 
+
+nav li {border: 1px solid #999;
+ display:inline-block; 가로형 메뉴
+ vertical-align: top; 메뉴들을 위로 정렬}
+ */
+
+nav {background-color: #000;
+ height: 30px;}
+
+nav>ul {border: 1px solid #ff0;
+/*  float: right; 우측 메뉴로 만들기  */
+width:30em;
+margin: 0 auto; /* 사이즈를 줄이고 중앙 메뉴로 만들기 */} 
+
+nav li {border: 1px solid #999;
+ float: left;  /* 2. float으로 가로형 메뉴 구현  */
+ margin-right: 2em; }
+
+h1 {clear: both; /* float의 영향 해제(제자리로 돌아감) */}
+
+
+
+
+
+
+
+#box01, #box02, #box03 {border: 3px solid #ccc;
+ margin: 4em 1em;
+ padding: 1em; }
+
+
+#box01>*:not(h2) {background-color: #277; 
+width: 200px;  height: 80px;
+margin: 50px; }
+#box01:hover>*:not(h2) {
+	display: block; }
+
+
+
+#box02>*:not(h2) {background-color: #730;
+width: 200px;  height: 80px;
+margin: 50px; }
+
+#box02:hover>*:not(h2) {
+ display: inline; }
+
+
+
+#box03>*:not(h2) {background-color: #a00;
+ width: 300px;   height: 50px;
+ margin: 30px;	}
+
+#box03:hover>*:not(h2) {
+ display: inline-block; }
+ 
+ 
+ 
+ 
+ /* display:none; 요소가 화면에서 사라짐 */
+ 
+article, section  {
+border: 2px dotted #a55;
+margin: 3em 1em;
+padding: 1em;  }
+ 
+article>span, section>span {
+background-color: #480;
+color: #fff; 	}
+
+article:hover>span {
+display: none; }
+
+article>p, section>p {
+border-bottom:4px double;
+padding-bottom: 4px;
+color:#480;	}
+
+article:hover>p {
+ display: none; }
+
+article>img {
+ display: none; }
+
+article:hover>img {
+ display:inline; } 
+
+
+
+ /* visibility:hidden; 
+ 요소가 화면에서 사라짐 */
+
+section:hover>span {
+ visibility: hidden; } 
+
+section:hover>p {
+ visibility: hidden; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+li {width: 300px; height: 100px;
+background-color: #8ff;
+margin-bottom: 50px;
+padding: 30px;
+border: 5px solid;
+position: relative;/* 기준이 될 부모의 설정 */
+overflow: hidden;/* 영역밖의 내용 숨김 */}
+
+li>div {position: absolute;/* 부모기준으로 자리잡기 */
+background-color: #ccc;
+right: -380px; /* 평상시 부모 영역 밖이라 보이지 않음 */
+top: 20px;}
+
+li:hover>div {/* 부모에 마우스오버시 영역 안으로 들어옴*/
+right: 20px;
+transition: 2s; }
+
+
+.cont {color: red; 
+ box-sizing: content-box;}
+.bord {color: blue;
+ box-sizing: border-box;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

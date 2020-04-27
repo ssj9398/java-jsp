@@ -1,0 +1,97 @@
+@charset "UTF-8";
+h1 {color: #fff;
+ border-bottom: 3px solid;}
+
+#box01, #box02 {border: 4px dashed #ccc;
+ float: left;
+ margin: 5em 2em;
+ padding: 1em;
+ background-image: url("img/woman.jpg");}
+
+#box01>p {border: 1px solid;
+ background-color: #fff;
+ padding: 0.5em;
+ font-size: 1.3em;}
+
+#box01>p:nth-of-type(1) {opacity:0;}
+#box01>p:nth-of-type(2) {opacity: 0.1;}
+#box01>p:nth-of-type(3) {opacity:0.2; }
+#box01>p:nth-of-type(4) {opacity: 0.3;}
+#box01>p:nth-of-type(5) {opacity:0.4; }
+#box01>p:nth-of-type(6) {opacity: 0.5;}
+#box01>p:nth-of-type(7) {opacity:0.6; }
+#box01>p:nth-of-type(8) {opacity: 0.7;}
+#box01>p:nth-of-type(9) {opacity: 0.8;}
+#box01>p:nth-of-type(10) {opacity:0.9; }
+#box01>p:nth-of-type(11) {opacity: 1;}
+
+#box01:hover>p {opacity: 1;}
+
+
+
+  /* rgba 색상에 투명도 지정*/
+#box02>pre {background-color:#fff;
+display:none;
+ font-size: 1.5em;}
+
+#box02:hover>pre {display:block;}
+
+
+#box02>p {border: 1px solid;
+ padding: 0.5em;
+ font-size: 1.3em;}
+
+#box02>p:nth-of-type(1) {
+ background-color: rgba(255,255,255,0);	}
+#box02>p:nth-of-type(2) {
+ background-color: rgba(255,255,255,0.1);}
+#box02>p:nth-of-type(3) {
+ background-color: rgba(255,255,255,0.2);}
+#box02>p:nth-of-type(4) {
+ background-color: rgba(255,255,255,0.3);}
+#box02>p:nth-of-type(5) {
+ background-color: rgba(255,255,255,0.4);}
+#box02>p:nth-of-type(6) {
+ background-color: rgba(255,255,255,0.5);}
+#box02>p:nth-of-type(7) {
+ background-color: rgba(255,255,255,0.6);}
+#box02>p:nth-of-type(8) {
+ background-color: rgba(255,255,255,0.7);}
+#box02>p:nth-of-type(9) {
+ background-color: rgba(255,255,255,0.8);}
+#box02>p:nth-of-type(10) {
+ background-color: rgba(255,255,255,0.9);}
+#box02>p:nth-of-type(11) {
+ background-color: rgba(255,255,255,1);}
+
+#box02:hover>p {
+background-color: rgba(255,255,255,1);}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

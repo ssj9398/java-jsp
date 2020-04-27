@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>position</title>
+<link href="position.css" rel="stylesheet">
+</head>
+<body>
+<h1>position - 요소의 위치 지정법</h1>
+<ul>
+ <li>position:static; 기본값. 위치 이동 불가</li>
+ <li>position:relative; 현재 위치를 기준으로 이동</li>
+ <li>position:absolute; 부모요소를 기준으로 이동</li>
+ <li>position:fixed; 브라우저를 기준으로 고정</li>
+ <li>position:sticky; relative와 fixed의 믹스</li>
+</ul>
+
+<section id="sec01">
+ <h2>position:static; 기본값. 위치 이동 불가</h2>
+
+ <p>position:static;</p>
+</section>	
+
+<section id="sec02">
+ <h2>position:relative; 현재 위치를 기준으로 이동</h2>
+
+ <p class="re01">position:relative; left: 500px;</p>
+ <p class="re02">position:relative; right: 100px;</p>
+ <p class="re03">position:relative; top: 100px;</p>
+ <p class="re04">position:relative; bottom: 100px;</p>
+ <p class="re05">position:relative; left: 800px; top:200px;
+ </p>
+ <p class="re06">position:relative;  left: 100%;</p>
+ <p class="re07">position:relative; bottom:100%;</p>
+ <b class="re08">move</b>
+</section>	
+
+
+<section id="sec03">
+ <h2>position:absolute; 부모요소를 기준으로 이동
+  (기준이 될 부모는 position:relative;로 설정해야 함)
+ </h2>
+ 
+ <p class="ab01">position:absolute;
+ left: 0;  top:0;</p>
+ <p class="ab02">position:absolute;
+ right: 0; bottom: 0;</p>
+ <p class="ab03">position:absolute;
+ left: 0; bottom: 0;</p>
+ <p class="ab04">position:absolute;
+ right: 0; top:0;</p>
+ <p class="ab05">position:absolute;
+ left: 50%; top: 50%;</p>
+ <p class="ab06">position:absolute;
+ left: -500px; top:40%;
+ #sec03:hover = left: 30%; top:40%;
+ </p>
+</section> 
+
+
+<div id="quick">
+ <nav>
+  <ul>
+   <li><a href="#">top</a></li>
+   <li><a href="#sec01">position:static;</a></li>
+   <li><a href="#sec02">position:relative;</a></li>
+   <li><a href="#sec03">position:absolute;</a></li>
+  </ul>
+ </nav>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

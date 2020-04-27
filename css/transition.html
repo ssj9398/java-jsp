@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>transition</title>
+<link href="transition.css" rel="stylesheet">
+</head>
+<body>
+<h1 class="cir">transition </h1>
+
+<ul>
+ <li>transition-property : ; 
+ 효과를 줄 속성명</li> 
+ <li>transition-duration : ; 
+ 효과를 줄 시간 (단위는 s나 ms)</li>
+ <li>transition-timing-function : ; 가속 감속 등
+  <ol>
+   <li>ease; 기본값. 천천히 시작해서 느리게 끝남</li>
+   <li>ease-in; 천천히 시작</li>
+   <li>ease-out; 천천히  끝남</li>
+   <li>ease-in-out; 시작과 끝 모두 천천히 </li>
+   <li>linear; 등속</li>
+   <li>cubic-bezier(n,n,n,n); 베지에 곡선값을 이용<br>
+   <a href="https://cubic-bezier.com" target="_blank"> 
+    cubic-bezier.com
+   </a>
+   </li>
+  </ol>
+ </li>
+ <li>transition-delay : ;  (효과를 주기 전)지연 시간</li>
+ <li>transition: ; 함축형 표현. 속성값만 나열</li>
+</ul>
+
+<div class="t-pro">
+ transition-property
+</div>
+
+<div class="t-pro t-del">
+ transition-property <br>transition-delay
+</div>
+
+<div class="box"> box </div>
+
+
+ <section id="sec01">
+  <div class="tf01">ease</div>
+  <div class="tf02">ease-in</div>
+  <div class="tf03">ease-out</div>
+  <div class="tf04">ease-in-out</div>
+  <div class="tf05">linear</div>
+  <div class="tf06">cubic-bezier(n,n,n,n)
+  </div>
+ </section>
+
+
+ <section id="sec02">
+  <button class="btn01">ease</button>
+  <button class="btn02">ease-in</button>
+  <button class="btn03">ease-out</button>
+  <button class="btn04">ease-in-out</button>
+  <button class="btn05">linear</button>
+  <button class="btn06">cubic-bezier</button>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

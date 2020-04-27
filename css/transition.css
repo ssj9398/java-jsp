@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+.cir {background-color:#09f;
+width: 150px; height: 50px;}
+
+.cir:hover {background-color:#f40;
+width: 150px; height: 150px;
+line-height: 150px;
+border-radius:50%;
+transition: 2.4s;
+}
+
+
+.t-pro {
+width: 800px;  height: 400px;	
+background-image: url("img/bear.jpg");
+background-size: cover;  	
+background-position: center bottom; 
+font-size: 1.5em;
+color: #039;
+box-sizing: border-box;
+}
+
+.t-pro:hover {border: 4px double #ccc;
+background-image: url("img/cat.jpg");
+font-size: 4em;
+color: #fff;
+transition-property 
+: background-image, font-size;
+transition-duration : 3s, 4s;
+}
+
+.t-del {transition-delay: 1.5s;}
+
+
+.box {background-color:yellow;
+	width: 100px; height: 50px;}
+	
+.box:hover {background-color:blue;
+width: 70px; height: 200px;
+font-size: 3em;
+transition-property 
+: background-color, font-size;
+transition-duration : 3s, 2s;}
+
+#sec01 {
+background-image:url("img/mythical.jpg"); 
+background-size: 100% 100%; 
+padding: 1em;  
+width: 1000px; height: 400px;}
+
+#sec01>div {
+border-bottom:10px solid #044;
+background-color:#488;	
+width: 150px; height: 50px;	
+color: #fff;
+float: left; 
+margin-right: 15px; }
+
+#sec01:hover>div  {
+ height: 360px;	
+ transition: 5s 0.5s;}
+ 
+#sec01:hover>div.tf01 {
+transition-timing-function:ease;}
+#sec01:hover>div.tf02 {
+transition-timing-function:ease-in;}
+#sec01:hover>div.tf03 {
+transition-timing-function:ease-out;}
+#sec01:hover>div.tf04 {
+transition-timing-function:ease-in-out;}
+#sec01:hover>div.tf05 {
+transition-timing-function:linear;}
+#sec01:hover>div.tf06 {
+transition-timing-function:
+cubic-bezier(.6,2.01,.54,-0.79);}
+ 
+#sec02 {border: 1px solid;
+ margin: 5em 2em;
+ padding: 2em;	}
+
+#sec02>button {
+ border:none;	
+ background-color: #386;	
+ padding: 10px; 
+ color:#fff;}
+
+#sec02>button:hover {
+ background-color: #5fa;
+ color:#386; 
+ padding: 15px;
+ cursor: pointer;/* 마우스커서를 손모양으로 */
+ transition:1.5s;}
+ 
+ #sec02>button.btn01:hover  {
+transition-timing-function:ease;}
+ 
+#sec02>button.btn02:hover  {
+transition-timing-function:ease-in;}
+ 
+#sec02>button.btn03:hover  {
+transition-timing-function:ease-out;}
+ 
+#sec02>button.btn04:hover  {
+transition-timing-function:ease-in-out;}
+ 
+#sec02>button.btn05:hover  {
+transition-timing-function:linear;}
+ 
+#sec02>button.btn06:hover  {
+transition-timing-function:
+cubic-bezier(.6,2.01,.54,-0.79);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

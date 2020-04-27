@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+#wrap {background-color: #aef;
+ width: 1000px; height: 600px;
+ margin: 5em auto;}
+
+ nav {border: 1px solid red;}
+ nav>ul {border: 1px solid green;
+  float: right;
+  margin-right: 30px;
+  margin-top: 100px;
+  list-style: none;}
+  
+ nav li {border: 1px solid orange;
+ float: left;}
+ 
+ form {border: 1px solid;
+  clear: both; }
+  
+ .left {border: 1px solid red;
+  float: left; }
+  
+ .right {border: 1px solid red;
+  float: left;}
+ 
+ 
+ 
+ 

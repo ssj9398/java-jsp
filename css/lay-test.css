@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+#wrap {
+background-color: #ccc;	
+width: 1000px;
+height: 600px;
+margin: 2em auto;}
+
+nav  {border: 1px solid red;
+/* height: 50px;  */}
+
+nav>ul  {border: 1px solid blue; 
+ float: right; /* 메뉴바 전체를 우측배치 */
+ margin-right: 20px; /* 메뉴바 우측에 공간 */}
+nav li  {border: 1px solid skyblue; 
+ float: left; /* 메뉴항목끼리 나란히 배치(가로형 메뉴) */
+	margin-right: 20px;
+	list-style: none; /* 목록앞의 모양 제거 */}
+
+
+form {border: 1px solid; 
+  clear:both; /* float의 영향을 끊음 */}
+
+.left, .right {
+	border: 1px solid red;
+	float: left;
+	margin-right: 20px;
+	margin-top: 200px;}
+
+.left {margin-left: 200px;}
+
+.box {padding: 0.5em;
+ margin-bottom: 36px;}
+
+.btn {width: 100px;
+ height: 100px;}
+
+
+
+
+
+
+
+
+
+
+
+
+

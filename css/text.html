@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>text-로 시작하는 글자 속성들</title>
+<link href="text.css" rel="stylesheet">
+</head>
+<body>
+<h1>text-로 시작하는 글자 속성들</h1>
+
+<ul>
+ <li>text-decoration : ; 글자의 줄들</li>
+ <li>text-align : ; 태그 내의 컨텐츠 수평 정렬</li>
+ <li>text-indent : ; 들여쓰기</li>
+ <li>text-transform : ; 영문의 대소문자 변경</li>
+ <li>text-shadow : ; 글자의 그림자</li>
+ <li>text-overflow : ; 영역 밖의 글자 처리</li>
+</ul>
+
+<section id="sec01">
+ <h2>text-decoration</h2>
+ <p class="tdeco01">text-decoration: overline;</p>
+ <p class="tdeco02">text-decoration: line-through;</p>
+ <p class="tdeco03">text-decoration: underline;</p>
+ <p class="tdeco04">a tag의 밑줄에
+  <a href="#">text-decoration</a>을 none으로 적용</p>
+</section>
+
+
+<section id="sec02">
+ <h2>text-align → <span class="tdeco03">태그 자신의 영역 내에서</span> 컨텐츠의 수평정렬 지정</h2>
+ <h3>1. p 태그에 적용시 </h3>
+ <p class="tal01">text-align : left;</p>
+ <p class="tal02">text-align : center;</p>
+ <p class="tal03">text-align : right;</p>
+ <p class="tal04">text-align : justify ;
+ text-align : justify ; text-a으로 적용lign : justify ;text-align : justify ;
+ text-align으로 적용 : ju으로 적용stify ; text-align : justify ;text-align : justify ;
+ text-align : justify ; text-align : justify ;으로 적용text-align : justify ;
+ text-align : just으로 적용ify ; text-align : justify 으로 적용 ;
+ </p>
+ <h3>2. th,td 태그에 적용시 </h3>
+ <table id="table01">
+  <tr> 
+   <th>text</th>
+   <th>align</th>
+   <th class="th3">left적용</th>
+  </tr>
+  <tr>
+   <td>left(기본)</td>
+   <td class="tal02">center</td>
+   <td class="tal03">right</td>
+  </tr>
+  <tr>
+   <td class="tal03"><img alt="ani" src="img/aniyellow.gif"></td>
+   <td class="tal01"><img alt="ani" src="img/aniyellow.gif"></td>
+   <td class="tal02"><img alt="ani" src="img/aniyellow.gif"></td>
+  </tr>
+ </table>
+ 
+</section>
+
+
+<section id="sec03">
+ <h2>text-indent (음수값도 가능)</h2>
+ <p class="tind01">text-indent : 100px;</p>
+ <p class="tind02">text-indent : 3em;</p>
+ <p class="tind03">text-indent : 30%;</p>
+ <p class="tind04">text-indent : -100px;</p>
+</section>
+
+<section id="sec04">
+ <h2>text-transform</h2>
+ <p class="ttran01">tEXt-tRaNsFOrm : nOnE ;</p>
+ <p class="ttran02">tEXt-tRaNsFOrm : loWercAse; 전체를 소문자로..</p>
+ <p class="ttran03">tEXt-tRaNsFOrm : upPerCasE; 전체를 대문자로..</p>
+ <p class="ttran04">tEXt-tRaNsFOrm : caPItaLIze; 첫글자를 대문자로..</p>
+</section>
+
+<section id="sec05">
+ <h2>text-shadow : n n n color; 그림자x방향값   그림자y방향값   퍼짐값   색상의 순서(방향값은 음수 가능)</h2>
+ <p class="tsh01">text-shadow : 0 0 10px #a33; 글자의 그림자</p>
+ <p class="tsh02">text-shadow : 0 5px 0 #a33; 글자의 그림자</p>
+ <p class="tsh03">text-shadow : 5px 0 0 #a33; 글자의 그림자</p>
+ <p class="tsh04">text-shadow : -5px -5px 0 #a33; 글자의 그림자</p>
+ <p class="tsh05">text-shadow : 3px 3px 5px #4af, 3px 3px 12px #ee0 ; 글자의 이중 그림자</p>
+ <p class="tsh06">text-shadow : 2px 3px 2px #333; 글자의 그림자</p>
+ <p class="tsh07">text-shadow : 3px 3px 6px #fc4, -3px -3px 6px #0ee; 글자의 이중 그림자</p>
+ <p class="tsh08">text-shadow : ; 글자의 그림자</p>
+</section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

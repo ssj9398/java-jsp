@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>background</title>
+<link href="background.css" rel="stylesheet">
+</head>
+<body>
+<ul>
+ <li>background
+  <ul>
+   <li>background-color</li>
+   <li>background-image: url("이미지 경로");</li>
+  </ul>
+ </li>
+</ul> 
+
+<section id="sec01">
+ <h1>background-image</h1>
+
+ <ul>
+  <li>background-repeat:; 배경 반복 지정
+   <ol>
+    <li>repeat = 기본. 양사방 반복됨</li>
+    <li>repeat-x = 가로로만 반복됨</li>
+    <li>repeat-y = 세로로만 반복됨</li>
+    <li>no-repeat = 반복안됨</li>
+   </ol>
+  </li>
+  <li>background-position:; 배경 위치 지정</li>
+  <li>background-size:; 배경 크기 지정
+   <ol>
+    <li>cover = 이미지 하나로 전체 채움</li>
+    <li>contain = 이미지 하나를 최대한 보이게</li>
+    <li>n n</li>
+   </ol>
+  </li>
+  <li>background-attachment:; 배경 고정 여부 지정
+   <ol>
+    <li>scroll</li>
+    <li>fixed</li>
+    <li>local</li>
+   </ol>
+  </li>
+ </ul>
+
+</section>
+
+<div class="box">
+ <h2>background-repeat</h2>
+ 
+ <p class="re01">background-repeat:repeat;</p>
+ <p class="re02">background-repeat:repeat-x;</p>
+ <p class="re03">background-repeat:repeat-y;</p>
+ <p class="re04">background-repeat:no-repeat;</p> 
+</div>
+
+<div class="box po">
+ <h2>background-position</h2>
+ 
+ <p class="po01">background-position</p> 
+ <p class="po02">background-position</p> 
+ <p class="po03">background-position</p> 
+ <p class="po04">background-position</p> 
+ <p class="po05">background-position</p> 
+ <p class="po06">background-position</p> 
+</div>
+
+<div class="box sz">
+ <h2>background-size</h2>
+ 
+ <p class="sz01">background-size: cover;</p>
+ <p class="sz02">background-size: contain;</p>
+ <p class="sz03">background-size: 100% 100%;</p>
+ <p class="sz04">background-size: 50% 100px;</p>
+</div>
+
+<div class="box att">
+ <h2>background-attachment</h2>
+ <ol>
+  <li>background-attachment:scroll; 브라우저(body) 스크롤바 -움직임, 자신의 영역  스크롤바 -고정.  </li>
+  <li>background-attachment:fixed; 브라우저(body) 스크롤바 -고정 , 자신의 영역  스크롤바 -고정.</li>
+  <li>background-attachment:local; 브라우저(body) 스크롤바 -움직임 , 자신의 영역  스크롤바 -움직임.</li>
+ </ol>
+ 
+ 
+ <p class="att01">background-attachment:scroll;<br> 
+  <br><br><br>background-attachment:scroll;<br>
+  <img alt="abend" src="img/abend.jpg">
+ </p>
+ <p class="att02">background-attachment:fixed;<br>
+  <br><br><br>background-attachment:fixed;<br>
+  <img alt="abend" src="img/abend.jpg">
+ </p>
+ <p class="att03">background-attachment:local;<br>
+  <br><br><br>background-attachment:local;<br>
+  <img alt="abend" src="img/abend.jpg">
+ </p>
+</div>
+
+
+
+ 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

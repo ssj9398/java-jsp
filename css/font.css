@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+/* html {font-size: 30px;} */
+
+body {
+background-color:#ededff; 
+font-family: 'Nanum Gothic', sans-serif;
+}
+ 
+section {border: 3px solid #ccc;
+padding: 1em;
+margin: 2em 1em;}
+
+h2 {background-color:#ccc;
+color:#333; 
+font-weight: normal;
+font-family: 'Jua', sans-serif; }
+
+
+  /* font-size */
+#sec01 {font-size: 0.5em;}
+
+.s01 {font-size: 1em;}
+.s02 {font-size: 0.8em;}
+.s03 {font-size: 0.6em;}
+.s04 {font-size: 0.4em;}
+
+.fs00 {font-size: 12px;}
+.fs01 {font-size: 16px;}
+.fs02 {font-size: 20px;}
+.fs03 {font-size: 1em;}
+.fs04 {font-size: 1.25em;}
+.fs05 {font-size: 1rem;}
+.fs06 {font-size: 1.25rem;}
+
+ 
+ /* font-weight */
+ #sec02>h2 {font-weight:normal;}
+ 
+.fw01 {font-weight: 100;}
+.fw02 {font-weight: 200;}
+.fw03 {font-weight: 300;}
+.fw04 {font-weight: 400;}
+.fw05 {font-weight: 500;}
+.fw06 {font-weight: 600;}
+.fw07 {font-weight: 700;}
+.fw08 {font-weight: 800;}
+.fw09 {font-weight: 900;} 
+.fw10 {font-weight: bold;}
+.fwn {font-weight: normal;}
+.fwn:hover {
+ font-weight: bold;}
+
+
+ /* font-style */
+ 
+.fst01 {font-style: italic; }
+.fst02 {font-style: oblique;}
+.fst03>i {font-style: normal;} 
+.fst03>em {font-style: normal;} 
+ 
+ 
+  /* font-family */
+.text {background-color: #fff;
+color: #257;
+padding: 1em;
+margin: 1em;
+font-size:1.1em;
+font-weight: bold; }  
+  
+  
+.fam01 {
+font-family:"돋움","굴림","맑은 고딕", sans-serif; }
+.fam02 {
+font-family: "Verdana", "Arial", sans-serif;}
+.fam03 {
+font-family: "궁서체","명조체",serif;}
+.fam04 {
+font-family: "Georgia", "Times New Roman", serif;}
+.fam05 {font-family: "Courier New",
+"Lucida Console", monospace;}
+
+
+
+
+/* fonts.google.com
+
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Jua', sans-serif;
+font-family: 'Noto Serif KR', serif;
+font-family: 'Gaegu', cursive;
+font-family: 'Single Day', cursive;
+ */
+.gf01 {font-family: 'Nanum Gothic', sans-serif;}
+.gf02 {font-family: 'Jua', sans-serif;}
+.gf03 {font-family: 'Noto Serif KR', serif;}
+.gf04 {font-family: 'Gaegu', cursive;}
+.gf05 {font-family: 'Single Day', cursive;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

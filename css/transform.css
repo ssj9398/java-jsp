@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+section {border: 1px solid #400;
+ margin: 5em 1em;
+ padding: 1em; }
+
+ /* transform:translate(); 위치변형 */
+#sec01>p {border: 1px solid #070;
+background-color: #5fd;
+width: 300px; height: 50px;}
+
+#sec01:hover>.trans01 {
+ transform:translateX(800px);}
+
+#sec01:hover>.trans02 {
+ transform:translateX(-300px);}
+
+#sec01:hover>.trans03 {
+ transform:translateY(300px);}
+ 
+#sec01:hover>.trans04 {
+ transform:translateY(-300px);}
+
+#sec01:hover>.trans05 {
+ transform:translate(700px,-400px);
+ transition:2s;}
+ 
+ 
+ 
+ 
+ 
+#sec01:hover>.trans07 {
+ transform:translate(100%,100%);
+ transition:2s;}
+
+
+
+
+.center {background-color:#0af;
+ width: 80%;  height: 400px; 
+ }
+
+.box {background-color:#fa0;
+ width: 40%;  height: 200px; 
+ position: relative;
+ left: 50%;  top:50%;
+ /* 1. 부모 영역의 절반에서 요소가 시작됨 */
+ transform:translate(-50%,-50%);
+ /* 2. 요소 크기의 절반만큼 다시 위,좌로 이동하여 정중앙에 위치됨 */
+ white-space: pre; /* pre태그처럼 공백 그대로 적용됨 */
+ }
+
+
+ /* transform:scale(); 크기변형 */
+#sec02, #sec03 {overflow: hidden;}
+ 
+#sec02>p, #sec03>p {
+ border: 1px solid;
+ width: 300px; height: 300px; 
+ overflow: hidden;
+ float: left;
+ margin: 3em;}
+
+#sec02 img, #sec03 img {
+	width: 300px; }
+
+#sec02:hover>.sca01 {
+ transform:scale(0.5,0.5);}
+
+#sec02:hover>.sca02 {
+ transform:scale(2,2);}
+ 
+#sec02:hover>.sca03 {
+ transform:scaleX(0.5);}
+ 
+#sec02:hover>.sca04 {
+ transform:scaleY(0.5);}
+ 
+#sec02:hover>.sca05 {
+ transform:scale(1.2,0.3);
+ transition:1.8s;} 
+
+#sec02:hover>.sca06 {
+ width: 150px; height: 150px; 
+ } 
+
+
+
+ /* transform:rotate(); 회전변형  */
+
+#sec03:hover>.rot01 {
+ transform:rotateX(360deg);
+ transition:2s;}
+ 
+#sec03:hover>.rot02 {
+ transform:rotateX(90deg);
+ transition:2s;}
+ 
+#sec03:hover>.rot03 {
+ transform:rotateY(45deg);
+ transition:2s;}
+
+#sec03:hover>.rot04 {
+ transform:rotateY(-180deg);
+ transition:2s;}
+
+.rot05:hover {
+ transform:rotate(360deg);
+ transition:2s;}
+
+#sec03:hover>.rot06 {
+ transform:rotate(-1080deg);
+ transition:2s;}
+
+.rot07 {overflow: hidden; }
+
+.rot07>img {width: 400px !important;}	
+
+.rot07:hover>img {
+ transform:rotate(-1080deg);
+ transition:2s;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

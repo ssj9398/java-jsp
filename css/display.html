@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>display</title>
+<link href="display.css" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+ <ul>
+  <li><a href="#box01">menu01</a></li>
+  <li><a href="#box02">menu02</a></li>
+  <li><a href="#box03">menu03</a></li>
+  <li class="mn04"><a href="#box04">menu04</a>
+   <ul class="submn">
+    <li><a href="#sub01">sub01</a></li>
+    <li><a href="#sub02">sub02</a></li>
+   </ul>
+  </li>
+  <li><a href="#box05">menu05</a></li>
+ </ul>
+</nav>
+
+
+<h1>box-model</h1>
+<ol>
+ <li>inline요소 - 한 줄에 나란히 올 수 있는 태그.<br>
+   크기가 적용 안 됨, 상하  margin이 적용 안됨.
+ </li>
+ <li>block요소 - 한 줄에 나란히 올 수 없는 태그.<br>
+   크기  적용 됨, 4방향  margin 모두 적용 됨.
+ </li>
+ <li>inline-block요소-한 줄에 나란히 오면서<br>
+   크기  적용 됨, 4방향  margin 모두 적용 됨.
+ </li>
+</ol>
+
+<h1>display로 태그의 성격 바꾸기</h1>
+ <ul>
+  <li>display:inline; block요소를 inline요소로 바꿔줌</li>
+  <li>display:block; inline요소를 block요소로 바꿔줌</li>
+  <li>display:inline-block; inline요소와 block요소 모두
+      inline-block로 바꿔줌
+  </li>
+  <li>display:none; 요소가 화면에서 사라짐</li>
+ </ul>
+
+
+<div id="box01">
+ <h2>inline요소</h2>
+ 
+ <b>b tag</b>
+ <i>i tag</i>
+ <span>span tag</span>
+ <label>label tag</label>
+ <a href="#">a tag</a>
+</div>
+
+<div id="box02">
+ <h2>block요소</h2>
+ 
+ <p>p tag</p>
+ <section>section tag</section>
+ <header>header tag</header>
+ <div>div tag</div>
+ <h3>h3 tag</h3>
+ <ul>
+  <li>ul tag</li>
+  <li>li tag</li>
+ </ul>
+</div>
+
+<div id="box03">
+ <h2>inline-block요소</h2>
+ 
+ <span>span tag</span>
+ <label>label tag</label>
+ <a href="#">a tag</a>
+ <p>p tag</p>
+ <header>header tag</header>
+ <div>div tag</div> 
+</div>
+
+<article id="box04">
+ <h2>display:none; 요소가 화면에서 사라짐 </h2>
+
+ <b>b tag</b> <span id="sub01">span tag</span> <i>i tag</i>
+ <p id="sub02">p tag</p> <div>div tag</div> <h4>h4 tag</h4> 
+ 
+ <img alt="cat" src="img/cat.jpg" width="100px">
+</article>
+
+<section id="box05">
+ <h2>visibility:hidden; 요소가 화면에서 사라짐(공간은 남김) </h2>
+ 
+ <b>b tag</b> <span>span tag</span> <i>i tag</i>
+ <p>p tag</p> <div>div tag</div> <h4>h4 tag</h4>
+</section> 
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

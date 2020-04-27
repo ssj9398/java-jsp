@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>padding</title>
+<link href="padding.css" rel="stylesheet">
+</head>
+<body>
+<h1>padding - 테두리 기준, 내부의 여백</h1>
+
+<h2>padding의 방향별 지정 속성</h2>
+<ul id="pad01">
+ <li class="padd-t">padding-top: 20px;<br>
+   테두리 기준 윗쪽 여백을 지정
+ </li>
+ <li class="padd-r">padding-right: 50px;<br>
+   테두리 기준 오른쪽 여백을 지정
+ </li>
+ <li class="padd-b">padding-bottom: 1em;<br>
+   테두리 기준 아랫쪽 여백을 지정
+ </li>
+ <li class="padd-l">padding-left: 20%;<br>
+   테두리 기준 왼쪽 여백을 지정
+ </li>
+</ul>
+
+ <p class="ti">들여쓰기 text-indent와 비교<br>들여쓰기 와 비교<br>들여쓰기 와 비교
+   들여쓰기 text-indent는 첫 줄에만 적용됨.
+ </p>
+ 
+<div id="photo">
+ <h3>img에 padding의 방향별 적용</h3>
+ 
+ <img class="padd-t" alt="backpack" src="img/backpack.jpg">
+ <img class="padd-r" alt="backpack" src="img/backpack.jpg">
+ <img class="padd-b" alt="backpack" src="img/backpack.jpg">
+ <img class="padd-l" alt="backpack" src="img/backpack.jpg">
+
+ <h3>input에 padding의 방향별 적용</h3>
+ <input class="padd-l" type="text" value="padding-left:20%;">
+ <input class="padd-t" type="password" value="padding-top: 20px;">
+</div>
+
+
+ <h2>padding의 값 갯수별 지정법</h2>
+ <ul id="pad02">
+  <li class="pn1">padding:n ; 양사방이 동일한 값으로 적용됨</li>
+  <li class="pn2">padding:n n; 상하와 좌우가 서로 동일한 값으로 적용됨</li>
+  <li class="pn3">padding:n n n; 상  좌우 서로 동일 하 순서로 적용됨</li>
+  <li class="pn4">padding:n n n n; 상 우 하 좌 순서로 적용됨</li>
+ </ul>
+ 
+ <div id="photo2">
+  <img src="img/cat.jpg" class="pnp1" title="15px적용">
+  <img src="img/cat.jpg" class="pnp2" title="30px 10px적용">
+  <img src="img/cat.jpg" class="pnp3" title="10px 14px 80px적용">
+  <img src="img/cat.jpg" class="pnp4" title="50px 10px 20px 10px적용">
+ 
+ <form action="test.jsp">
+  <fieldset>
+   <legend>log-in</legend>  
+    <label class="label p1" for="id">id</label> <input type="text" id="id"> <br>
+    <label class="label p2" for="pwd">pwd</label> <input type="password" id="pwd">
+    <br>
+    <input class="sub-btn" type="submit" value="login">
+  </fieldset>
+ </form>
+ 
+ </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>margin</title>
+<link href="margin.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrap">
+<h1>margin - 테두리 기준, 내부의 여백</h1>
+
+<h2>margin의 방향별 지정 속성</h2>
+ <ol id="ol-01">
+  <li class="mt">margin-top: 50px; </li>
+  <li class="mr">margin-right: 20%; </li>
+  <li class="mb">margin-bottom: 50px; </li>
+  <li class="ml">margin-left: 20%; </li>
+ </ol>
+
+<h2>margin의  값 갯수별 지정법</h2>
+<ul id="ul-01">
+ <li class="mn1">margin: n; </li>
+ <li class="mn2">margin: n n; </li>
+ <li class="mn3">margin: n n n; </li>
+ <li class="mn4">margin: n n n n; </li>
+</ul>
+
+<div id="inline">
+<h3>inline요소에서의  margin적용 차이</h3>
+ <b>bold</b> <a href="#">a(link)</a>
+ <i>italic</i> <label>label</label>
+</div>
+
+ <form action="test.jsp">
+  <fieldset>
+   <legend>log-in</legend>  
+    <label class="label p1" for="id">id</label> <input type="text" id="id"> <br>
+    <label class="label p2" for="pwd">pwd</label> <input type="password" id="pwd">
+    <br>
+    <input class="sub-btn" type="submit" value="login">
+  </fieldset>
+ </form>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

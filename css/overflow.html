@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>overflow</title>
+<link href="overflow.css" rel="stylesheet">
+</head>
+<body>
+<h1>overflow 영역밖의 내용 상태 지정</h1>
+<ul>
+ <li>overflow:visible;</li>
+ <li>overflow:hidden;</li>
+ <li>overflow:scroll;</li>
+ <li>overflow:auto;</li>
+</ul>
+
+<section id="sec01">
+ <div class="vis">
+  <h2>overflow:visible;</h2>
+  <p>overflow:visible;<br><br><br><br>
+   overflow:visible;<br><br><br><br>
+   <img alt="art" src="img/art.jpg">
+  </p> 
+ </div> 
+ 
+ <div class="hid">
+  <h2>overflow:hidden;</h2>
+  <p>overflow:hidden;<br><br><br><br>
+  overflow:hidden;<br><br><br><br>
+  <img alt="art" src="img/art.jpg">
+  </p>
+ </div>
+   
+ <div class="scroll">
+  <h2>overflow:scroll;</h2>
+  <p>overflow:scroll;<br><br><br><br>
+  overflow:scroll;<br><br><br><br>
+  <img alt="art" src="img/art.jpg">
+  </p>
+ </div>
+ 
+ <div class="auto">
+  <h2>overflow:auto;</h2>
+  <p>overflow:auto;<br><br><br><br>
+  overflow:auto;<br><br><br><br>
+  <img alt="art" src="img/art.jpg">
+  </p>
+ </div> 
+</section>
+
+	
+<section id="sec02">
+ <h3>art</h3>
+ <img alt="art" src="img/art.jpg">
+ <p>display: inline-block;<br>
+ vertical-align: top;<br>
+ margin-right: 50px;
+ </p>
+</section>
+<section id="sec03">
+<h2>말줄임표 넣기</h2>
+<p>
+  overflow: hidden; 영역 밖의 내용 숨김<br>
+  white-space: nowrap; 자동 줄바꿈 금지<br>
+  text-overflow: ellipsis; 영역 밖의 글자를 말줄임표 처리
+</p>
+<p class="p01">말줄임표 넣기 overflow:hidden;
+white-space: nowrap;text-overflow: ellipsis;
+</p>
+</section>
+
+</body>
+</html>
+
+
+
+
+
+
+
