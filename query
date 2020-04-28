@@ -1,0 +1,5 @@
+create table user(
+idx int AUTO_INCREMENT primary key,
+id varchar(10) unique not null,
+password varchar(16) not null
+);
